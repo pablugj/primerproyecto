@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>Pagina de inicio</title>
+    <title>Registro</title>
     <!-- Comentario -->
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -9,19 +9,13 @@
 
   <body>
   	<header>
-  		<h1>Pablo Ulises</h1>
-  		<p>Esta es una descripcion mas larga</p>
-  		<!-- link href es la direccion y target como se vera el link -->
+  		<h1>Enviar Datos</h1>
+  		<p>Este Formulario enviara datos</p>
   		<a href="https//www.tecsanpedro.edu.mx" target="_blank">Mi link</a>
-  		<nav>
-  			<ul>
-  				<li>home</li>
-  			</ul>
-  		</nav>
 	</header>
 	<section>
 		<article>
-			<form method="POST" action="datos.php">
+			<form method="GET" action="datos.php">
 				<p>
           <label for="nombre" >Nombre
             <input type="text" name="nombre" id="nombre" />
@@ -39,10 +33,26 @@
           </label>
         </p>
         <p>
-          <input type="submit" name="boton1" value="Enviara" />
+          Gustos
         </p>
+        <p>
 
-
+          <label for="futbol">
+            <input type="checkbox" name="gustos" value="futbol" id="futbol">
+            Futbol Soccer
+          </label>
+          <label for="leer">
+            <input type="checkbox" name="gustos" value="libros" id="leer">
+            Leer todo tipo de documentos
+          </label>
+          <label for="comer">
+            <input type="checkbox" name="gustos" value="comer" id="comer">
+            Comer mucho como Ray
+          </label>
+        </p>
+        <p>
+          <input type="submit" name="envia" value="Enviara" />
+        </p>
 			</form>
 		</article>
 	</section>
